@@ -13,7 +13,6 @@ window.addEventListener('load',()=>{
             mode: 'no-cors'
         }
         ).then(()=>{
-            console.log('enviado')
             window.location.href = './final.html'
         })
 
