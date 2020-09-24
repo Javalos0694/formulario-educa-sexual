@@ -14,7 +14,7 @@ window.addEventListener('load',()=>{
         }
         ).then(()=>{
             console.log('enviado')
-            //window.location.href = './final.html'
+            window.location.href = './final.html'
         })
 
     })
