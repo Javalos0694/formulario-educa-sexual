@@ -20,6 +20,28 @@ window.addEventListener('load',()=>{
         })
 
     })
+
+    //Adaptando los text area a responsive
+    let arrayTextArea = document.querySelectorAll('.adaptable');
+    
+
+    window.addEventListener('resize',()=>{
+        let screenSize = window.innerWidth;
+        console.log('ejecuta')
+        arrayTextArea.forEach(elemento => {
+            if(screenSize>=577  && screenSize<=992){
+                elemento.setAttribute('rows',3)
+            }
+            else if(screenSize<=576){
+                elemento.setAttribute('rows',2)  
+            }
+            else{
+                elemento.setAttribute('rows',5)
+            }
+        })
+    })
+
+   
 })
 
  

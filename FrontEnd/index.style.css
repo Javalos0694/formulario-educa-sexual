@@ -29,14 +29,14 @@ body{
     background-size: cover;
 }
 
-.card{
+.container .card{
     background-image: url('./imagenes/Fondo.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
 
-.card-title h1{
-    animation-duration: 3s;
+.container .card .card-title h1{
+    animation-duration: 5s;
     animation-name: desaparecer;
     font-family: BunglerLight;
     font-size:  7em;
@@ -51,8 +51,14 @@ body{
     }
 }
 
+.container .card .card-body .imagen .imagen-one{
+    font-size: 2em;
+    width: 100em;
+}
+
 .transparencia{
     background-color: transparent;
+    height: 100px;
 }
 
 
@@ -74,7 +80,7 @@ li{
 }
 
 .range-bar{
-    width: 95%;
+    width: 85%;
 }
 
 .range-leyend::after{
@@ -82,14 +88,37 @@ li{
     font-weight: bold;
     color: var(--color1);
     position: relative;
-    left: 5px;
-
+    font-size: 14px;
 }
 .range-leyend::before{
     content: "1";
     font-weight: bold;
     color: var(--color1);
     position: relative;
-    right: 5px;
+    font-size: 14px;
 }
 
+
+
+
+@media (max-width: 991.98px) { 
+    .container{
+        font-size: 14px;
+    }
+ }
+
+ @media (max-width: 767.98px) { 
+    .container{
+        font-size: 12px;
+    }
+    .container .card .card-body{
+        font-size: 1.2em;
+    }
+  }
+
+  @media (max-width: 575.98px) { 
+    .container{
+        font-size: 8px;
+    }
+    
+   }
