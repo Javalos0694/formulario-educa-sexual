@@ -2,7 +2,7 @@ window.addEventListener('load',()=>{
     const formulario = document.querySelector('#formulario');
 
     formulario.addEventListener('submit',(event)=>{
-        event.preventDefault();
+       
 
         const formData = new FormData(event.currentTarget);
 
@@ -41,7 +41,7 @@ window.addEventListener('load',()=>{
         })
     })
 
-   
+    event.preventDefault();
 })
 
  
