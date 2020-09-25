@@ -10,7 +10,10 @@ window.addEventListener('load',()=>{
         {
             method: 'POST',
             body: formData,
-            mode: 'no-cors'
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json'
+            }
         }
         ).then(()=>{
             window.location.href = './final.html'
