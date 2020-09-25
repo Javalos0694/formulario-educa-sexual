@@ -1,4 +1,9 @@
 @font-face{
+    font-family: "BunglerLight";
+    src: url('./Fuentes/BunglerLight.ttf');
+}
+
+@font-face{
     font-family: "Montserrat";
     src: url('./Fuentes/Montserrat-Regular.ttf');
 }
@@ -8,7 +13,7 @@
     --color2: #f6f5f5;
     --color3: #168c8c;
     --color4: #9fbf2c;
-    
+    --colorRojo: #e62a37;
 }
 
 
@@ -19,20 +24,22 @@ body{
 }
 
 .container{
-    background-color: var(--color3);
-    
+    background-image: url('./imagenes/fondo-mesa.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .card{
-    background-color: var(--color4);
+    background-image: url('./imagenes/Fondo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .card-title h1{
-    text-decoration: underline;
     animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
     animation-name: desaparecer;
+    font-family: BunglerLight;
+    font-size:  7em;
 }
 
 @keyframes desaparecer{
@@ -43,6 +50,11 @@ body{
         opacity: 1;
     }
 }
+
+.transparencia{
+    background-color: transparent;
+}
+
 
 label{
     font-weight: lighter;
