@@ -1,10 +1,9 @@
 window.addEventListener('load',()=>{
     const formulario = document.querySelector('#formulario');
+    const sendInfo = document.querySelector('#enviar')
+    sendInfo.addEventListener('click',()=>{
 
-    formulario.addEventListener('submit',(event)=>{
-        event.preventDefault();
-
-        const formData = new FormData(event.currentTarget);
+        const formData = new FormData(formulario);
 
         fetch('http://localhost:3600/api/formAnswer',
         {
