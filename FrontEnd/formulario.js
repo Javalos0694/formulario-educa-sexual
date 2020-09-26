@@ -1,8 +1,7 @@
 window.addEventListener('load',()=>{
     const formulario = document.querySelector('#formulario');
-    const sendInfo = document.querySelector('#enviar')
-    sendInfo.addEventListener('click',()=>{
-
+    formulario.addEventListener('submit',(event)=>{
+        event.preventDefault();
         const formData = new FormData(formulario);
 
         fetch('http://localhost:3600/api/formAnswer',
@@ -23,7 +22,6 @@ window.addEventListener('load',()=>{
     //Adaptando los text area a responsive
     let arrayTextArea = document.querySelectorAll('.adaptable');
     
-
     window.addEventListener('resize',()=>{
         let screenSize = window.innerWidth;
         console.log('ejecuta')
