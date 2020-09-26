@@ -4,7 +4,7 @@ window.addEventListener('load',()=>{
         event.preventDefault();
         const formData = new FormData(formulario);
 
-        fetch('http://localhost:3600/api/formAnswer',
+        fetch('https://backend-educacion.herokuapp.com/api/formAnswer',
         {
             method: 'POST',
             body: formData,
