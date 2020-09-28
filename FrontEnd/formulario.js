@@ -24,7 +24,6 @@ window.addEventListener('load',()=>{
     
     window.addEventListener('resize',()=>{
         let screenSize = window.innerWidth;
-        console.log('ejecuta')
         arrayTextArea.forEach(elemento => {
             if(screenSize>=577  && screenSize<=992){
                 elemento.setAttribute('rows',3)
