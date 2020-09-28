@@ -17,15 +17,42 @@
             <div class="col-12">
                 <form id="formulario">
                     <div class="card form-group mt-sm-4">
-                        <div class="card-title text-center">
-                            <h1>Modo Incognito</h1>
+                        <div class="card-title">
+                            <div class="row no-gutters">
+                                <div class="col-12 text-center">
+                                    <h1>MODO INCOGNITO</h1>
+                                </div>
+                                <!--
+                                <div class="col-4 d-flex align-items-center justify-content-center">
+                                    <div>
+                                        <img class="logo img-fluid" src="./imagenes/logoRigoberta.png" alt="">
+                                    </div>
+                                </div>
+                                -->
+                            </div>
                         </div>
                         <div class="card-body">
                             <div class="row form-group mb-5">
                                 <div class="col-12">
                                     <label for="res1">1.- ¿Qué tanto conoces sobre sexualidad?</label><br>
                                     <div class="range-leyend">
-                                        <input type="range" name="res1" class="range-bar" min="1" max="5" step="1" value="1">
+                                       0 <input type="range" list="marcas" name="res1" class="range-bar" min="0" max="5" step="1" value="0"> 5
+                                        <datalist id="marcas">
+                                            <option value="0"></option>
+                                            <option value="1"></option>
+                                            <option value="2"></option>
+                                            <option value="3"></option>
+                                            <option value="4"></option>
+                                            <option value="5"></option>
+                                        </datalist>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div>
+                                        <p>Poco</p>
+                                    </div>
+                                    <div class="mr-sm-2 mr-md-5">
+                                        <p>Mucho</p>
                                     </div>
                                 </div>
                                 <div class="col-12 d-flex justify-content-center">
@@ -74,13 +101,45 @@
                             <div class="form-group">
                                 <label for="res5">5.- ¿Qué tan cómodo te sentiste al hablar sobre sexualidad?</label> <br>
                                 <div class="ml-3 range-leyend">
-                                    <input type="range" name="res5" class="range-bar" min="1" max="5" step="1" value="1">
+                                    0 <input type="range" list="marcas" name="res5" class="range-bar" min="0" max="5" step="1" value="0"> 5
+                                    <datalist id="marcas">
+                                        <option value="0"></option>
+                                        <option value="1"></option>
+                                        <option value="2"></option>
+                                        <option value="3"></option>
+                                        <option value="4"></option>
+                                        <option value="5"></option>
+                                    </datalist>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div>
+                                        <p>Poco</p>
+                                    </div>
+                                    <div class="mr-sm-2 mr-md-5">
+                                        <p>Mucho</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="res6">6.- ¿Con quién te sientes mas cómodo al hablar sobre temas relacionados a sexualidad? </label> <br>
                                 <div class="ml-3 range-leyend">
-                                    <input type="range" name="res6" class="range-bar" min="1" max="5" step="1" value="1">
+                                    0 <input type="range" list="marcas" name="res6" class="range-bar" min="0" max="5" step="1" value="0"> 5
+                                    <datalist id="marcas">
+                                        <option value="0"></option>
+                                        <option value="1"></option>
+                                        <option value="2"></option>
+                                        <option value="3"></option>
+                                        <option value="4"></option>
+                                        <option value="5"></option>
+                                    </datalist>
+                                </div>
+                                <div class="col-12 d-flex justify-content-between">
+                                    <div>
+                                        <p>Poco</p>
+                                    </div>
+                                    <div class="mr-sm-2 mr-md-5">
+                                        <p>Mucho</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row form-group d-flex">
@@ -129,96 +188,288 @@
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre los cambios que atraviesa tu cuerpo durante la pubertad</label>
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res13" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res14" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre los órganos sexuales masculinos</label>
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res14" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res15" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre los órganos sexuales femeninos</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res15" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res16" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre las relaciones sexuales en parejas</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res16" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res17" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre el concepto de virginidad</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res17" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res18" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre las infecciones de transmisión sexual</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res18" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res19" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre el consentimiento</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res19" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res20" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre amor propio/autoestima/seguridad</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res20" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res21" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre relaciones tóxicas/sanas</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res21" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res22" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre la mansturbación</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res22" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res23" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre anticonceptivos</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res23" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res24" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fas fa-venus"></i>
                                                 <i class="fas fa-mars"></i>
                                                 <label for="">Sobre los derechos sexuales</label> 
-                                                <div class="range-leyend ml-5">
-                                                    <input type="range" name="res24" min="1" max="5" step="1" value="1">
+                                                <div class="range-leyend ml-sm-5">
+                                                   0 <input type="range" class="range-bar" list="marcas" name="res25" min="0" max="5" step="1" value="0"> 5
+                                                    <datalist id="marcas">
+                                                        <option value="0"></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value="4"></option>
+                                                        <option value="5"></option>
+                                                    </datalist>
+                                                </div>
+                                                 <div class="col-12 d-flex justify-content-between">
+                                                    <div>
+                                                        <p>Poco</p>
+                                                    </div>
+                                                    <div class="mr-sm-2 mr-md-5">
+                                                        <p>Mucho</p>
+                                                    </div>
                                                 </div>
                                             </li>
                                         </ul>

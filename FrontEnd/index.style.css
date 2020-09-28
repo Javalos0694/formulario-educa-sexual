@@ -82,21 +82,32 @@ li{
     width: 85%;
 }
 
-.range-leyend::after{
-    content: "5";
-    font-weight: bold;
-    color: var(--color1);
-    position: relative;
-    font-size: 14px;
-}
-.range-leyend::before{
-    content: "1";
-    font-weight: bold;
-    color: var(--color1);
-    position: relative;
-    font-size: 14px;
+
+.container .card .card-title .logo{
+    width: 12em;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .2);
+    transform: rotateZ(45deg);
 }
 
+/*
+.range-leyend::after{
+    content: "Mucho";
+    font-weight: bold;
+    color: var(--color1);
+    position: relative;
+    top: 20px;
+    font-size: 10px;
+}
+.range-leyend::before{
+    content: "Poco";
+    font-weight: bold;
+    color: var(--color1);
+    position: relative;
+    top: 20px;
+    font-size: 10px;
+}
+*/
 
 
 
@@ -114,10 +125,10 @@ li{
         font-size: 1.2em;
     }
   }
+  
 
   @media (max-width: 575.98px) { 
     .container{
         font-size: 8px;
     }
-    
    }
